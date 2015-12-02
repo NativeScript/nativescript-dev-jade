@@ -1,0 +1,36 @@
+{
+  "name": "nativescript-dev-jade",
+  "version": "0.0.1",
+  "description": "Jade support for NativeScript projects.",
+  "scripts": {
+    "test": "exit 0",
+    "postinstall": "node postinstall.js",
+    "preuninstall": "node preuninstall.js"
+  },
+  "nativescript": {
+    "hooks": [
+      {
+        "type": "before-prepare",
+        "script": "lib/before-prepare.js",
+        "inject": true
+      },
+      {
+        "type": "before-watch",
+        "script": "lib/watch.js",
+        "inject": true
+      }
+    ]
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NativeScript/nativescript-dev-jade.git"
+  },
+  "dependencies": {
+    "jade": "*",
+    "gaze": "^0.5.2",
+    "glob": "*",
+    "lodash": "^3.10.1",
+    "nativescript-hook": "^0.2.0"
+  }
+}
