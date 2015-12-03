@@ -1,6 +1,6 @@
 {
   "name": "nativescript-dev-jade",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Jade support for NativeScript projects.",
   "scripts": {
     "test": "exit 0",
