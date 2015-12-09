@@ -1,6 +1,6 @@
 {
   "name": "nativescript-dev-jade",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Jade support for NativeScript projects.",
   "scripts": {
     "test": "exit 0",
@@ -13,11 +13,6 @@
         "type": "before-prepare",
         "script": "lib/before-prepare.js",
         "inject": true
-      },
-      {
-        "type": "before-watch",
-        "script": "lib/watch.js",
-        "inject": true
       }
     ]
   },
@@ -28,9 +23,7 @@
   },
   "dependencies": {
     "jade": "*",
-    "gaze": "^0.5.2",
     "glob": "*",
-    "lodash": "^3.10.1",
     "nativescript-hook": "^0.2.0"
   }
 }
